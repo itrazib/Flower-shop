@@ -51,10 +51,58 @@
 .header-image img{
     width: 100%;
 }
+/* flower featur  */
+.flower-feature-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* justify-content: center;
+    align-items: center; */
+    gap: 24px;
+}
+.flower-feature-content{
+        max-width: 580px;
+        margin: 48px auto;
+        text-align: center;
+}
+.flower-feature{
+    margin-top: 120px;
+}
+.flower-card{
+    text-align: center;
+}
+.flower-title-1{
+    font-size: 1.50rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.background{
+     max-width: 480px;
+     height: 530px;
+     background-color: rgba(167, 33, 98, 0.15);
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.background-1{
+     /* height: 605px; */
+     background-color: rgba(167, 33, 98, 0.15);
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Media quari for mobile device */
 @media screen and (max-width: 576px) {
     .header-section{
         flex-direction: column;
+    }
+    .flower-feature-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
     .flower-details{
         margin: 0px 10px;
@@ -62,6 +110,10 @@
 }
 /* Media quari for tablet device */
 @media screen and (min-width: 576px) and (max-width: 990px) {
+     .flower-feature-container{
+        grid-template-columns: repeat(2,1fr);
+        /* justify-items: center; */
+    }
     .flower-details{
     margin-top: 50px;
     margin-bottom: 30px;
